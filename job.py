@@ -7,6 +7,7 @@ def save_to_file(file_name, pls):
         FIle.write(
               f"{pl['company']},{pl['title']},{pl['location']},{pl['pay']},{pl['link']},\n"
                     )
+                    
       else:
         FIle.write(
               f"{pl['company']},{pl['title']},{pl['location']},None,{pl['link']},\n"
