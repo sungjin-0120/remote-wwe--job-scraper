@@ -16,7 +16,9 @@ def Search():
     if keyword in db:
       pls=db[keyword]
     else:
-        pls = extract_remote(keyword)+extract_remote(keyword)
+        remote = extract_remote(keyword)
+        wwr = extract_wwr_jobs(keyword)
+        pls = remote + wwr
         db[keyword]=pls
     return render_template('pl_search.html', keyword = keyword, pls=pls)
 
