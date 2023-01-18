@@ -33,5 +33,3 @@ def export():
     return send_file(f"{keyword}.csv",mimetype='text/csv',as_attachment=True)
 
 app.run('127.0.0.1')
-
-#adsfsdfsd
